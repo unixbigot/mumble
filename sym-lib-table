@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mumble-rescue)(type Legacy)(uri ${KIPRJMOD}/mumble-rescue.lib)(options "")(descr ""))
+  (lib (name accelerando)(type Legacy)(uri ${HOME}/src/kicad-libraries/Accelerando.lib)(options "")(descr ""))
+)
