@@ -14,3 +14,8 @@
 ### Notes
 * Large switch pads are not connected (layout improvement)
 *	- On switches ordered large pads are shorted (chassis).
+
+## V1.1
+### To fix
+* X motor driver has 3 pins shorted (X_STEP, X_DIR, Pin 12)
+* VINT Label goes nowhere and should go to internal driver regulator VINT pin
