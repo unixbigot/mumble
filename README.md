@@ -15,6 +15,6 @@ Change Log,
 Issues
 
 Version 1.0 -> 1.3
-Bradley King, fixed double pin 10
-Bradley King, connected enable to vmotor via 47k resistor (datasheet 8.4.3)
-Bradley King, connected charge status led to + v_usb, was floating. 
+* Bradley King, fixed double pin 10
+* Bradley King, connected enable to vmotor via 47k resistor (datasheet 8.4.3)
+* Bradley King, connected charge status led to + v_usb, was floating. 
