@@ -669,12 +669,12 @@ Wire Wire Line
 	5650 8050 5650 8150
 Connection ~ 5500 8050
 $Comp
-L Connector:Conn_01x06 J1
+L Connector_Generic:Conn_01x06 J1
 U 1 1 5B74C30C
 P 1800 2800
 F 0 "J1" H 1720 3217 50  0000 C CNN
 F 1 "Serial" H 1720 3126 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 1800 2800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1800 2800 50  0001 C CNN
 F 3 "~" H 1800 2800 50  0001 C CNN
 	1    1800 2800
 	-1   0    0    -1  
@@ -848,7 +848,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4000 4450 4000
 $Comp
-L Connector:Conn_01x04 J11
+L Connector_Generic:Conn_01x04 J11
 U 1 1 5BA199BE
 P 10300 7100
 F 0 "J11" H 10380 7092 50  0000 L CNN
@@ -1043,19 +1043,11 @@ Wire Wire Line
 Wire Wire Line
 	9950 8300 9950 8350
 Wire Wire Line
-	10100 7100 9900 7100
-Wire Wire Line
-	9900 7850 10050 7850
-Wire Wire Line
 	10050 7850 10050 7200
 Wire Wire Line
 	10050 7200 10100 7200
 Wire Wire Line
 	10100 7300 10100 8100
-Wire Wire Line
-	10100 8100 9900 8100
-Wire Wire Line
-	9900 7100 9900 7200
 Wire Wire Line
 	9200 8850 9200 8950
 Wire Wire Line
@@ -1078,8 +1070,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 8450 8450 8550
 Connection ~ 8450 8550
-Wire Wire Line
-	9900 7000 10100 7000
 Connection ~ 9200 8850
 Wire Wire Line
 	9900 6750 10000 6750
@@ -1095,7 +1085,7 @@ F 3 "" H 9200 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:POT_TRIM RV1
+L Device:R_POT_TRIM RV1
 U 1 1 5BA19A68
 P 8800 8950
 F 0 "RV1" H 8730 8996 50  0000 R CNN
@@ -1199,7 +1189,7 @@ Y_STEP
 Text Label 12350 7200 0    50   ~ 0
 Y_DIR
 $Comp
-L Connector:Conn_01x04 J16
+L Connector_Generic:Conn_01x04 J16
 U 1 1 5B821997
 P 14500 7100
 F 0 "J16" H 14580 7092 50  0000 L CNN
@@ -1446,7 +1436,7 @@ F 3 "" H 13400 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:POT_TRIM RV2
+L Device:R_POT_TRIM RV2
 U 1 1 5B821A3C
 P 13000 8950
 F 0 "RV2" H 12930 8996 50  0000 R CNN
@@ -1593,7 +1583,7 @@ Connection ~ 1950 750
 Wire Wire Line
 	2300 1050 2400 1050
 $Comp
-L device:Battery BT101
+L Device:Battery BT101
 U 1 1 5B7597E1
 P 1950 1800
 F 0 "BT101" H 2058 1846 50  0000 L CNN
@@ -1628,18 +1618,18 @@ F 3 "" H 5800 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED D101
+L Device:LED D101
 U 1 1 5B78A65D
 P 5800 3400
 F 0 "D101" V 5838 3283 50  0000 R CNN
 F 1 "LED" V 5747 3283 50  0000 R CNN
-F 2 "LEDs:LED_0805" H 5800 3400 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5800 3400 50  0001 C CNN
 F 3 "~" H 5800 3400 50  0001 C CNN
 	1    5800 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R101
+L Device:R R101
 U 1 1 5B78A9C7
 P 5800 3700
 F 0 "R101" H 5870 3746 50  0000 L CNN
@@ -1661,18 +1651,18 @@ F 3 "" H 5800 3850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:LED D102
+L Device:LED D102
 U 1 1 5B7C7782
 P 6500 3400
 F 0 "D102" V 6538 3283 50  0000 R CNN
 F 1 "LED" V 6447 3283 50  0000 R CNN
-F 2 "LEDs:LED_0805" H 6500 3400 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6500 3400 50  0001 C CNN
 F 3 "~" H 6500 3400 50  0001 C CNN
 	1    6500 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R102
+L Device:R R102
 U 1 1 5B7C7788
 P 6500 3700
 F 0 "R102" H 6570 3746 50  0000 L CNN
@@ -1763,8 +1753,6 @@ Wire Wire Line
 	8050 7700 8050 7500
 Wire Wire Line
 	7500 7700 8050 7700
-Text Label 8500 7600 2    50   ~ 0
-VINT_X
 Wire Wire Line
 	11750 7200 12000 7200
 $Comp
@@ -1825,8 +1813,6 @@ Text Label 11600 6950 0    50   ~ 0
 VINT_Y
 Text Label 11300 7550 0    50   ~ 0
 VINT_Y
-Text Label 12700 7600 2    50   ~ 0
-VINT_Y
 $Comp
 L mumble-rescue:+BATT #PWR0110
 U 1 1 5B8F624F
@@ -1838,22 +1824,21 @@ F 3 "" H 1950 1600 50  0001 C CNN
 	1    1950 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 1950 1600
 Text Label 950  1600 2    50   ~ 0
 BATT_SWITCHED
 $Comp
-L device:LED D103
+L Device:LED D103
 U 1 1 5B8F6FBA
 P 8000 3400
 F 0 "D103" V 8038 3283 50  0000 R CNN
 F 1 "CHRG" V 7947 3283 50  0000 R CNN
-F 2 "LEDs:LED_0805" H 8000 3400 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8000 3400 50  0001 C CNN
 F 3 "~" H 8000 3400 50  0001 C CNN
 	1    8000 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R103
+L Device:R R103
 U 1 1 5B8F6FC0
 P 8000 3700
 F 0 "R103" H 8070 3746 50  0000 L CNN
@@ -1879,4 +1864,46 @@ Wire Wire Line
 	2600 1050 2600 1400
 Wire Wire Line
 	2600 1400 3050 1400
+Text Label 3450 1400 0    50   ~ 0
+BATT_PROT
+$Comp
+L mumble-rescue:R_Small R104
+U 1 1 5C14831B
+P 8200 7700
+F 0 "R104" V 8230 7720 50  0000 L CNN
+F 1 "47k" H 8230 7660 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8200 7700 50  0001 C CNN
+F 3 "" H 8200 7700 50  0001 C CNN
+	1    8200 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 7600 8200 7600
+Text Label 8200 7800 0    50   ~ 0
+VM
+$Comp
+L mumble-rescue:R_Small R105
+U 1 1 5C16CE90
+P 12400 7700
+F 0 "R105" V 12430 7720 50  0000 L CNN
+F 1 "47k" H 12430 7660 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 12400 7700 50  0001 C CNN
+F 3 "" H 12400 7700 50  0001 C CNN
+	1    12400 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 7600 12400 7600
+Text Label 12400 7800 0    50   ~ 0
+VM
+Wire Wire Line
+	10100 8100 9900 8100
+Wire Wire Line
+	9900 7850 10050 7850
+Wire Wire Line
+	9900 7000 10100 7000
+Wire Wire Line
+	9900 7100 9900 7200
+Wire Wire Line
+	9900 7100 10100 7100
 $EndSCHEMATC

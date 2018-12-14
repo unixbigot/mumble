@@ -1,19 +1,19 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Accelerando:DRV8834
+# Accelerando_DRV8834
 #
-DEF Accelerando:DRV8834 U 0 40 Y Y 1 F N
+DEF Accelerando_DRV8834 U 0 40 Y Y 1 F N
 F0 "U" -350 1100 50 H V C CNN
-F1 "Accelerando:DRV8834" 350 1100 50 H V C CNN
+F1 "Accelerando_DRV8834" 350 1100 50 H V C CNN
 F2 "" 50 -50 50 H I C CNN
 F3 "" 50 -50 50 H I C CNN
 DRAW
 S -450 1200 550 -1000 0 1 0 N
 X nSLEEP 1 -650 50 200 R 50 50 1 1 I
-X DIR/BPHASE 10 -650 450 200 R 50 50 1 1 I
 X nENBL/AENBL 10 -650 650 200 R 50 50 1 1 I
 X STEP/BENBL 11 -650 550 200 R 50 50 1 1 I
+X DIR/BPHASE 12 -650 450 200 R 50 50 1 1 I
 X M0/APHASE 13 -650 250 200 R 50 50 1 1 O
 X M1 14 -650 150 200 R 50 50 1 1 O
 X CONFIG 15 -650 350 200 R 50 50 1 1 O
@@ -29,30 +29,25 @@ X BVREF 23 -650 -800 200 R 50 50 1 1 w
 X VREFO 24 -650 -700 200 R 50 50 1 1 I
 X GND 25 200 -1200 200 U 50 50 1 1 O
 X ADECAY 3 -650 -300 200 R 50 50 1 1 w
-X AOUT1 4 750 650 200 L 50 50 1 1 w
-X AISEN 5 750 250 200 L 50 50 1 1 I
+X AOUT1 4 750 250 200 L 50 50 1 1 w
+X AISEN 5 750 650 200 L 50 50 1 1 I
 X AOUT2 6 750 450 200 L 50 50 1 1 w
-X BOUT2 7 750 -450 200 L 50 50 1 1 w
+X BOUT2 7 750 -200 200 L 50 50 1 1 w
 X BISEN 8 750 -650 200 L 50 50 1 1 I
-X BOUT1 9 750 -200 200 L 50 50 1 1 w
+X BOUT1 9 750 -450 200 L 50 50 1 1 w
 X ~ ~ 200 -1300 200 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x04
+# Connector_Generic_Conn_01x04
 #
-DEF Connector:Conn_01x04 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x04" 0 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 -195 0 -205 1 1 6 N
@@ -67,20 +62,15 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x06
+# Connector_Generic_Conn_01x06
 #
-DEF Connector:Conn_01x06 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector:Conn_01x06" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 -295 0 -305 1 1 6 N
@@ -99,11 +89,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:USB_B_Micro
+# Connector_USB_B_Micro
 #
-DEF Connector:USB_B_Micro J 0 40 Y Y 1 F N
+DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "Connector:USB_B_Micro" -200 350 50 H V L CNN
+F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 ALIAS USB_B_Mini
@@ -135,11 +125,96 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper:Jumper_3_Bridged12
+# Device_Battery
 #
-DEF Jumper:Jumper_3_Bridged12 JP 0 0 Y N 1 F N
+DEF Device_Battery BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -80 -55 80 -65 0 1 0 F
+S -80 70 80 60 0 1 0 F
+S -52 -78 50 -98 0 1 0 F
+S -52 47 50 27 0 1 0 F
+P 2 0 1 0 0 -60 0 -50 N
+P 2 0 1 0 0 -40 0 -30 N
+P 2 0 1 0 0 -20 0 -10 N
+P 2 0 1 0 0 0 0 10 N
+P 2 0 1 0 0 20 0 30 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 10 105 50 105 N
+P 2 0 1 10 30 125 30 85 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_POT_TRIM
+#
+DEF Device_R_POT_TRIM RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT_TRIM" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 60 30 60 -30 N
+P 2 0 1 0 100 0 60 0 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Jumper_Jumper_3_Bridged12
+#
+DEF Jumper_Jumper_3_Bridged12 JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper:Jumper_3_Bridged12" 0 110 50 H V C CNN
+F1 "Jumper_Jumper_3_Bridged12" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -157,11 +232,11 @@ X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_SPST
+# Switch_SW_SPST
 #
-DEF Switch:SW_SPST SW 0 0 Y N 1 F N
+DEF Switch_SW_SPST SW 0 0 Y N 1 F N
 F0 "SW" 0 125 50 H V C CNN
-F1 "Switch:SW_SPST" 0 -100 50 H V C CNN
+F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -173,11 +248,11 @@ X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:+3.3V
+# mumble-rescue_+3.3V
 #
-DEF mumble-rescue:+3.3V #PWR 0 0 Y Y 1 F P
+DEF mumble-rescue_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mumble-rescue:+3.3V" 0 140 50 H V C CNN
+F1 "mumble-rescue_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -188,11 +263,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:+BATT
+# mumble-rescue_+BATT
 #
-DEF mumble-rescue:+BATT #PWR 0 0 Y Y 1 F P
+DEF mumble-rescue_+BATT #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "mumble-rescue:+BATT" 0 140 50 H V C CNN
+F1 "mumble-rescue_+BATT" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -203,11 +278,11 @@ X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:AP2204K-3.3
+# mumble-rescue_AP2204K-3.3
 #
-DEF mumble-rescue:AP2204K-3.3 U 0 10 Y Y 1 F N
+DEF mumble-rescue_AP2204K-3.3 U 0 10 Y Y 1 F N
 F0 "U" -200 225 50 H V L CNN
-F1 "mumble-rescue:AP2204K-3.3" 0 225 50 H V L CNN
+F1 "mumble-rescue_AP2204K-3.3" 0 225 50 H V L CNN
 F2 "TO_SOT_Packages_SMD:SOT-23-5" 0 325 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 $FPLIST
@@ -223,11 +298,11 @@ X VOUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:CP_Small
+# mumble-rescue_CP_Small
 #
-DEF mumble-rescue:CP_Small C 0 10 N N 1 F N
+DEF mumble-rescue_CP_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "mumble-rescue:CP_Small" 10 -80 50 H V L CNN
+F1 "mumble-rescue_CP_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -243,11 +318,11 @@ X ~ 2 0 -100 73 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:C_Small
+# mumble-rescue_C_Small
 #
-DEF mumble-rescue:C_Small C 0 10 N N 1 F N
+DEF mumble-rescue_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "mumble-rescue:C_Small" 10 -80 50 H V L CNN
+F1 "mumble-rescue_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -261,11 +336,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:Conn_01x03
+# mumble-rescue_Conn_01x03
 #
-DEF mumble-rescue:Conn_01x03 J 0 40 Y N 1 F N
+DEF mumble-rescue_Conn_01x03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "mumble-rescue:Conn_01x03" 0 -200 50 H V C CNN
+F1 "mumble-rescue_Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -287,11 +362,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:ESP32-WROOM
+# mumble-rescue_ESP32-WROOM
 #
-DEF mumble-rescue:ESP32-WROOM U 0 40 Y Y 1 F N
+DEF mumble-rescue_ESP32-WROOM U 0 40 Y Y 1 F N
 F0 "U" -700 1250 60 H V C CNN
-F1 "mumble-rescue:ESP32-WROOM" 500 1250 60 H V C CNN
+F1 "mumble-rescue_ESP32-WROOM" 500 1250 60 H V C CNN
 F2 "ESP32-footprints-Lib:ESP32-WROOM" 350 1350 60 H I C CNN
 F3 "" -450 450 60 H I C CNN
 DRAW
@@ -339,11 +414,11 @@ X IO33 9 -950 -100 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:GND
+# mumble-rescue_GND
 #
-DEF mumble-rescue:GND #PWR 0 0 Y Y 1 F P
+DEF mumble-rescue_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "mumble-rescue:GND" 0 -150 50 H V C CNN
+F1 "mumble-rescue_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -352,11 +427,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:Q_PMOS_GSD
+# mumble-rescue_Q_PMOS_GSD
 #
-DEF mumble-rescue:Q_PMOS_GSD Q 0 0 Y N 1 F N
+DEF mumble-rescue_Q_PMOS_GSD Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "mumble-rescue:Q_PMOS_GSD" 200 -50 50 H V L CNN
+F1 "mumble-rescue_Q_PMOS_GSD" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -384,11 +459,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:R
+# mumble-rescue_R
 #
-DEF mumble-rescue:R R 0 0 N Y 1 F N
+DEF mumble-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "mumble-rescue:R" 0 0 50 V V C CNN
+F1 "mumble-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -402,11 +477,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:R_Small
+# mumble-rescue_R_Small
 #
-DEF mumble-rescue:R_Small R 0 10 N N 1 F N
+DEF mumble-rescue_R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "mumble-rescue:R_Small" 30 -40 50 H V L CNN
+F1 "mumble-rescue_R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -419,11 +494,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:SW_Push
+# mumble-rescue_SW_Push
 #
-DEF mumble-rescue:SW_Push SW 0 40 N N 1 F N
+DEF mumble-rescue_SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "mumble-rescue:SW_Push" 0 -60 50 H V C CNN
+F1 "mumble-rescue_SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -436,11 +511,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# mumble-rescue:TP4054
+# mumble-rescue_TP4054
 #
-DEF mumble-rescue:TP4054 U 0 40 Y Y 1 F N
+DEF mumble-rescue_TP4054 U 0 40 Y Y 1 F N
 F0 "U" -150 0 60 H V C CNN
-F1 "mumble-rescue:TP4054" -100 -100 60 H V C CNN
+F1 "mumble-rescue_TP4054" -100 -100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -453,11 +528,11 @@ X PROG 5 400 -350 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3V3
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
